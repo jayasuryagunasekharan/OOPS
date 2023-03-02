@@ -1,8 +1,21 @@
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+class Dog:
+	# class attribute
+	attr1 = "mammal"
 
+	# Instance attribute
+	def __init__(self, name):
+		self.name = name
 
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('Surya')
+# Driver code
+# Object instantiation
+Rodger = Dog("Rodger")
+Tommy = Dog("Tommy")
+
+# Accessing class attributes
+print("Rodger is a {}".format(Rodger.__class__.attr1))
+print("Tommy is also a {}".format(Tommy.__class__.attr1))
+
+# Accessing instance attributes
+print("My name is {}".format(Rodger.name))
+print("My name is {}".format(Tommy.name))
+
